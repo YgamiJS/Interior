@@ -1,0 +1,65 @@
+@import "@/assets/css/varibles.scss";
+
+.header {
+  background-color: $brown;
+  position: fixed;
+  width: 100vw;
+  padding: 10px;
+  z-index: 2;
+  .header__container {
+    .dekstop__navbar {
+      display: flex;
+      justify-content: center;
+      ul {
+        display: flex;
+        align-items: center;
+        gap: 0 20px;
+      }
+    }
+
+    .mobile__navbar {
+      display: none;
+      .button {
+        background: transparent;
+        border: none;
+        display: flex;
+        flex-direction: column;
+        width: 50px;
+      }
+      ul {
+        background: bisque;
+        display: none;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px 0;
+        padding: 20px 0;
+      }
+    }
+
+    ul {
+      li a {
+        color: $white;
+      }
+    }
+
+    @media (max-width: 767px) {
+      .mobile__navbar {
+        display: flex;
+        flex-direction: column;
+      }
+      .dekstop__navbar {
+        display: none;
+      }
+    }
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+.visiblity {
+  background: $white;
+  display: flex !important;
+  height: 100vh;
+}

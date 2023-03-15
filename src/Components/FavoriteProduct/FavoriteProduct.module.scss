@@ -1,0 +1,33 @@
+@import "@/assets/css/varibles.scss";
+
+.favoriteProduct {
+  display: flex;
+  color: $graphit;
+  border: 3px solid $brown;
+  border-radius: 9px;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 50vw;
+  padding: 10px;
+  .count {
+    display: flex;
+    align-items: center;
+    gap: 0 5px;
+  }
+
+  button {
+    background: $brown;
+    cursor: pointer;
+    color: $white;
+    width: 25px;
+    height: 25px;
+    border: none;
+    outline: none;
+    border-radius: 50%;
+  }
+
+  @media (max-width: 767px) {
+    width: calc(100vw - 30px);
+  }
+}

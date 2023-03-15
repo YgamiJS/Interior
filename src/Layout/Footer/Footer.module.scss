@@ -1,0 +1,50 @@
+@import "@/assets/css/varibles.scss";
+
+.footer {
+  &__content {
+    margin: 25px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    @media (max-width: 1000px) {
+      flex-direction: column;
+      align-items: stretch;
+    }
+    // form {
+    //   position: relative;
+
+    //   input {
+    //     display: block;
+    //     padding: 15px 30p;
+    //     width: 220px;
+    //     line-height: 3em;
+    //     border-radius: 1.5em;
+    //     border: 1px solid;
+    //     padding: 0 1.5em;
+    //   }
+
+    //   button {
+    //     background: $brown;
+    //     cursor: pointer;
+    //     color: $white;
+    //     padding: 5px 10px;
+    //     position: absolute;
+    //     width: auto;
+    //     top: 0.4em;
+    //     left: 9.5em;
+    //     right: 0.4em;
+    //     height: 2.2em;
+    //     border-radius: 1.1em;
+    //     border: none;
+    //     font-size: 14px;
+    //   }
+    // }
+
+    ul {
+      li a {
+        color: $graphit;
+      }
+    }
+  }
+}

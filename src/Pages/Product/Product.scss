@@ -1,0 +1,47 @@
+@import "@/assets/css/varibles.scss";
+
+.product {
+  padding: 20px 0;
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  &__image {
+    width: 50%;
+  }
+
+  .info {
+    &__description {
+      max-width: 400px;
+    }
+
+    &__price {
+      font-family: "Gotham";
+      margin: 20px 0;
+      font-size: 20px;
+      font-weight: 400;
+      &::after {
+        content: "$";
+      }
+    }
+    &__button {
+      background: $brown;
+      cursor: pointer;
+      color: $white;
+      border-radius: 60px;
+      padding: 15px 50px;
+      border: none;
+    }
+  }
+
+  @media (max-width: 475px) {
+    &__image {
+      width: 100%;
+    }
+  }
+
+  .line {
+    text-decoration: line-through;
+  }
+}

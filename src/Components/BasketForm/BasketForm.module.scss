@@ -1,0 +1,26 @@
+@import "@/assets/css/varibles.scss";
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 300px;
+  input {
+    background: $brown;
+    border-radius: 9px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    color: $white;
+  }
+
+  button {
+    background: $graphit;
+    cursor: pointer;
+    border-radius: 9px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    color: $white;
+  }
+}

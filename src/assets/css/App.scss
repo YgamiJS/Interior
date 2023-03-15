@@ -1,0 +1,77 @@
+@import "./varibles.scss";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+@font-face {
+  font-family: "Jost";
+  src: url("@/assets/fonts/Jost-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Work Sans";
+  src: url("@/assets/fonts/WorkSans-Regular.ttf");
+}
+@font-face {
+  font-family: "Gotham";
+  src: url("@/assets/fonts/GothamXLight.otf");
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+}
+
+body {
+  background: $wheat;
+  font-family: "Work Sans";
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  width: 100vw;
+  min-height: 100vh;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1280px;
+  padding: 0 15px;
+}
+
+.main {
+  margin-top: 60px;
+  flex: 1 0 auto;
+}
+
+.medium-text {
+  font-size: 25.93px;
+  font-weight: 500;
+}
+
+.small-text {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.empty {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  color: $graphit;
+}
