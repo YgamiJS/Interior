@@ -15,7 +15,7 @@ export const userSlice = createSlice({
   initialState,
   reducers: {
     addUser(state, action: PayloadAction<IUser>) {
-      // state = action.payload;
+    
       state.email = action.payload.email;
       state.password = action.payload.password;
       state.id = action.payload.id;

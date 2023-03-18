@@ -4,8 +4,10 @@ import "./SingIn.scss";
 export const SingIn = () => {
   return (
     <main className="main">
-      <div className="singin__container container">
-        <FormSingIn />
+      <div className="SingIn">
+        <div className="SingIn__container container">
+          <FormSingIn />
+        </div>
       </div>
     </main>
   );

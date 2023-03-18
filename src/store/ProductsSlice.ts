@@ -6,7 +6,7 @@ import {
 } from "@reduxjs/toolkit";
 import { IProduct, IServise } from "@/types/types";
 import Servise from "@/services/Servise";
-import products from "./products.json";
+import { data } from "./products";
 
 export const fetchProducts = createAsyncThunk(
   "products/fetchProducts",
@@ -28,7 +28,7 @@ interface IState {
 }
 
 const initialState: IState = {
-  merchandises: products,
+  merchandises: data,
   status: null,
   error: null,
 };

@@ -26,7 +26,6 @@ export const Product = () => {
     dispath(
       addFavorite({
         ...product,
-        id: uuid(), // ! временно бэк пилиться
         count: 1,
         totalPrice: product.price,
       })
