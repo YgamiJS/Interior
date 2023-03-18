@@ -23,9 +23,7 @@ export const FavoriteProduct = ({ product }: IProps) => {
   return (
     <div className={styles.favoriteProduct} id={product.id}>
       <img src={product.img} alt={product.title} />
-      <p className={styles.favoriteProduct__totalPricee}>
-        {product.totalPrice}
-      </p>
+      <p className={styles.favoriteProduct__totalPrice}>{product.totalPrice}</p>
       <p className={styles.title}>{product.title}</p>
       <div className={styles.count}>
         <button onClick={decrement}>-</button>

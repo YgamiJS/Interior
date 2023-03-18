@@ -1,19 +1,19 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Autoplay, EffectFade } from "swiper";
+import { Navigation, Autoplay } from "swiper";
 import { IProduct } from "@/types/types";
 import "./Swiper.scss";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/autoplay";
 import "swiper/css/effect-fade";
-import { ProductItem } from "../ProductItem/ProductItem";
+import { ProductItem } from "@/Components/ProductItem/ProductItem";
 
-interface Props {
+interface IProps {
   products: IProduct[];
 }
 
-export const Slider = ({ products }: Props) => {
+export const Slider = ({ products }: IProps) => {
   return (
     <Swiper
       className="container"

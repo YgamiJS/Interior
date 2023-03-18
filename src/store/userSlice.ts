@@ -6,6 +6,7 @@ import { IUser } from "@/types/types";
 const initialState: IUser = {
   id: null,
   email: null,
+  password: null,
   token: null,
 };
 
@@ -14,12 +15,17 @@ export const userSlice = createSlice({
   initialState,
   reducers: {
     addUser(state, action: PayloadAction<IUser>) {
-      state = action.payload;
+      // state = action.payload;
+      state.email = action.payload.email;
+      state.password = action.payload.password;
+      state.id = action.payload.id;
+      state.token = action.payload.token;
     },
     removeUser(state) {
       state.id = null;
       state.email = null;
       state.token = null;
+      state.password = null;
     },
   },
 });

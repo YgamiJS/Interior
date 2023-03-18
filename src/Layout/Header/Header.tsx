@@ -4,8 +4,10 @@ import line from "@/assets/images/2Vector-2.png";
 import { Link } from "react-router-dom";
 import clsx from "clsx";
 import styles from "./Header.module.scss";
+import { useAuth } from "@/hooks/useAuth";
 
 export const Header = () => {
+  const auth = useAuth();
   const [visiblity, setIsVisiblity] = useState<boolean>(false);
 
   const toggleMenu = () => {
@@ -29,6 +31,16 @@ export const Header = () => {
             <li>
               <Link to="/Contact">Contact</Link>
             </li>
+            {!auth.isAuth && (
+              <>
+                <li>
+                  <Link to="/login">Login</Link>
+                </li>
+                <li>
+                  <Link to="/singin">Sing In</Link>
+                </li>
+              </>
+            )}
             <li>
               <Link to="/basket">
                 <img src={favoritePhoto} alt="" />
@@ -61,6 +73,16 @@ export const Header = () => {
             <li>
               <Link to="/Contact">Contact</Link>
             </li>
+            {!auth.isAuth && (
+              <>
+                <li>
+                  <Link to="/login">Login</Link>
+                </li>
+                <li>
+                  <Link to="/singin">Sing In</Link>
+                </li>
+              </>
+            )}
             <li>
               <Link to="/basket">
                 <img src={favoritePhoto} alt="" />

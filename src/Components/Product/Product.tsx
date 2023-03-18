@@ -1,12 +1,13 @@
 import React, { useState } from "react";
 import { useAppDispatch, useAppSelector } from "@/hooks/useRedux";
-import "./Product.scss";
 import { useParams } from "react-router";
 import { addFavorite } from "@/store/FavoriteProductsSlice";
 import { IProduct } from "@/types/types";
 import { Rating } from "react-simple-star-rating";
-import { Slider } from "@/Components";
 import { Link } from "react-router-dom";
+import { uuid } from "@/utils/utils";
+import styles from "./Product.module.scss";
+import { SliderImagesProduct } from "@/Components/SliderImagesProduct/SliderImagesProduct";
 
 export const Product = () => {
   const products = useAppSelector((state) => state.products.merchandises);
@@ -25,6 +26,7 @@ export const Product = () => {
     dispath(
       addFavorite({
         ...product,
+        id: uuid(), // ! временно бэк пилиться
         count: 1,
         totalPrice: product.price,
       })
@@ -36,35 +38,33 @@ export const Product = () => {
 
   return (
     <main className="main">
-      <div className="product">
-        <div className="product__container container">
-          <img
-            src={product.img}
-            alt={product.title}
-            className="product__image"
-          />
-          <div className="product__info">
+      <div className={styles.product}>
+        <div className={styles.product__container + " container"}>
+          <SliderImagesProduct product={product} />
+          <div className={styles.product__info}>
             <h1>{product.title}</h1>
             <Rating
-              className="info__rating"
+              className={styles.info__rating}
               initialValue={product.rating}
               size={24}
             />
-            <p className="info__description">{product.description}</p>
-            <p className="info__price">
-              {product.old && <span className="line">{product.old}</span>}
+            <p className={styles.info__description}>{product.description}</p>
+            <p className={styles.info__price}>
+              {product.old && (
+                <span className={styles.line}>{product.old}</span>
+              )}
               &nbsp;
               {product.price}
             </p>
             {!bought ? (
               <button
-                className="info__button"
+                className={styles.info__button}
                 onClick={() => addFavoriteProduct(product)}
               >
                 Buy
               </button>
             ) : (
-              <Link className="info__button" to="/Basket/">
+              <Link className={styles.info__button} to="/Basket/">
                 Go to the Basket
               </Link>
             )}

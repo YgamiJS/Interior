@@ -1,7 +1,6 @@
 import { IFavoriteProduct } from "@/types/types";
-import { List } from "@/Components";
-import { FavoriteProduct } from "@/Components";
-import { uuid } from "@/utils/utils";
+import { List } from "@/Components/List/List";
+import { FavoriteProduct } from "@/Components/FavoriteProduct/FavoriteProduct";
 import styles from "./FavoriteProductsList.module.scss";
 
 interface IProps {
@@ -14,7 +13,7 @@ export const FavoriteProductsList = ({ favoriteProducts }: IProps) => {
       className={styles.list}
       items={favoriteProducts}
       renderList={(favoriteProduct) => (
-        <FavoriteProduct key={uuid()} product={favoriteProduct} />
+        <FavoriteProduct key={favoriteProduct.id} product={favoriteProduct} />
       )}
     />
   );

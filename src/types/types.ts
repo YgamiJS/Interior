@@ -6,6 +6,7 @@ export interface IRoute {
 export interface IUser {
   id: string | null;
   email: string | null;
+  password: string | null;
   token: string | null;
 }
 
@@ -24,6 +25,10 @@ export interface IProduct {
 export interface IFavoriteProduct extends IProduct {
   totalPrice: number; // string
   count: number;
+}
+
+export interface IBoughtProduct extends IFavoriteProduct {
+  date: number;
 }
 
 export type Inputs = {

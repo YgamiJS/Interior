@@ -6,12 +6,29 @@
   gap: 20px;
   width: 300px;
   input {
+    -moz-appearance: textfield;
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+    }
+    &::placeholder {
+      color: $white;
+    }
     background: $brown;
     border-radius: 9px;
     padding: 10px;
     border: none;
     outline: none;
     color: $white;
+  }
+
+  .price {
+    font-family: "Gotham";
+    font-size: 20px;
+    font-weight: 400;
+    &::after {
+      content: "$";
+    }
   }
 
   button {

@@ -1,0 +1,33 @@
+@import "@/assets/css/varibles.scss";
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+
+  input {
+    background: $brown;
+    border-radius: 9px;
+    color: $white;
+    padding: 15px 20px;
+    border: none;
+    outline: none;
+    &::placeholder {
+      color: $white;
+    }
+  }
+
+  button {
+    background: $graphit;
+    width: 200px;
+    border-radius: 9px;
+    color: $white;
+    padding: 10px 15px;
+    border: none;
+    outline: none;
+  }
+}

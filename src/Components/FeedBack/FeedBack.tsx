@@ -1,4 +1,4 @@
-import { Popup } from "@/Components";
+import { Popup } from "@/Components/Popup/Popup";
 import { useForm, SubmitHandler } from "react-hook-form";
 import { useState } from "react";
 import styles from "./FeedBack.module.scss";

@@ -2,8 +2,10 @@ import React, { useState } from "react";
 import { useForm, SubmitHandler } from "react-hook-form";
 import { useAppSelector } from "@/hooks/useRedux";
 import type { IProduct, Input } from "@/types/types";
+import { List } from "@/Components/List/List";
+import { Modal } from "@/Components/Modal/Modal";
+import { ProductItem } from "@/Components/ProductItem/ProductItem";
 import styles from "./Control.module.scss";
-import { List, Modal, ProductItem } from "@/Components";
 
 interface IProps {
   text: React.ReactNode | string;

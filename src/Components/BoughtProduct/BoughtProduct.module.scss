@@ -10,6 +10,11 @@
   flex-wrap: wrap;
   width: 50vw;
   padding: 10px;
+  .count {
+    display: flex;
+    align-items: center;
+    gap: 0 5px;
+  }
 
   &__totalPrice {
     font-family: "Gotham";
@@ -18,11 +23,6 @@
     &::after {
       content: "$";
     }
-  }
-  .count {
-    display: flex;
-    align-items: center;
-    gap: 0 5px;
   }
 
   button {
