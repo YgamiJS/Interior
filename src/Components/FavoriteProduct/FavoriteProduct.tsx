@@ -1,4 +1,3 @@
-import React from "react";
 import { IFavoriteProduct } from "@/types/types";
 import styles from "./FavoriteProduct.module.scss";
 import {

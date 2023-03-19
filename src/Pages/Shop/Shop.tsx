@@ -1,4 +1,3 @@
-import React from "react";
 import { useAppSelector } from "@/hooks/useRedux";
 import { Control, Slider } from "@/Components";
 import input from "@/assets/images/input.png";

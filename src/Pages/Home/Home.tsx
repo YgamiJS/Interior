@@ -1,11 +1,8 @@
-import React from "react";
 import { useAppSelector } from "@/hooks/useRedux";
-import { fetchProducts } from "@/store/ProductsSlice";
 import { Link } from "react-router-dom";
 import { Control, Slider } from "@/Components";
 import { images } from "@/assets/images";
 import "./Home.scss";
-import { useAuth } from "@/hooks/useAuth";
 
 export const Home = () => {
   const products = useAppSelector((state) => state.products.merchandises);

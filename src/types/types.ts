@@ -14,7 +14,7 @@ export interface IProduct {
   id: string;
   title: string;
   description: string;
-  price: number; //string
+  price: number;
   old?: string | null;
   img: string;
   rating: number | undefined;
@@ -23,7 +23,7 @@ export interface IProduct {
 }
 
 export interface IFavoriteProduct extends IProduct {
-  totalPrice: number; // string
+  totalPrice: number;
   count: number;
 }
 

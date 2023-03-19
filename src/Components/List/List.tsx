@@ -1,5 +1,3 @@
-import React, { FC } from "react";
-
 interface IProps<T> {
   items: T[];
   [x: string]: any;

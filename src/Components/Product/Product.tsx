@@ -1,11 +1,10 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { useAppDispatch, useAppSelector } from "@/hooks/useRedux";
 import { useParams } from "react-router";
 import { addFavorite } from "@/store/FavoriteProductsSlice";
 import { IProduct } from "@/types/types";
 import { Rating } from "react-simple-star-rating";
 import { Link } from "react-router-dom";
-import { uuid } from "@/utils/utils";
 import styles from "./Product.module.scss";
 import { SliderImagesProduct } from "@/Components/SliderImagesProduct/SliderImagesProduct";
 

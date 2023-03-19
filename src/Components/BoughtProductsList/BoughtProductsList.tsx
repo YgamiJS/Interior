@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import { BoughtProduct } from "@/Components/BoughtProduct/BoughtProduct";
 import { List } from "@/Components/List/List";
 import { IBoughtProduct } from "@/types/types";

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { useForm, SubmitHandler } from "react-hook-form";
 import { useAppSelector } from "@/hooks/useRedux";
 import type { IProduct, Input } from "@/types/types";

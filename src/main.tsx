@@ -1,7 +1,7 @@
 import React, { Suspense } from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App";
-import { HashRouter } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
 import { Provider } from "react-redux";
 import { PersistGate } from "redux-persist/integration/react";
 import store, { persistor } from "./store/store";
@@ -11,13 +11,13 @@ import "@/assets/css/App.scss";
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>
     <Suspense fallback={<h1>loading</h1>}>
-      <HashRouter>
+      <BrowserRouter>
         <Provider store={store}>
           <PersistGate loading={<h1>loading</h1>} persistor={persistor}>
             <App />
           </PersistGate>
         </Provider>
-      </HashRouter>
+      </BrowserRouter>
     </Suspense>
   </React.StrictMode>
 );

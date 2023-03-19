@@ -1,4 +1,4 @@
-import React, { useMemo, useState } from "react";
+import { useMemo, useState } from "react";
 import { useAppSelector, useAppDispatch } from "@/hooks/useRedux";
 import {
   BoughtProductsList,
@@ -10,10 +10,10 @@ import { clearFavorite } from "@/store/FavoriteProductsSlice";
 import { SubmitHandler } from "react-hook-form";
 import { BasketFrom } from "@/types/types";
 import { loadBoughtProducts } from "@/store/BoughtProductsSlice";
-import "./Basket.scss";
 import { randomDate } from "@/utils/utils";
 import { useAuth } from "@/hooks/useAuth";
 import { useNavigate } from "react-router";
+import "./Basket.scss";
 
 export const Basket = () => {
   const favoriteProducts = useAppSelector(

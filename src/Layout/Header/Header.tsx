@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import favoritePhoto from "@/assets/images/shop.png";
 import line from "@/assets/images/2Vector-2.png";
 import { Link } from "react-router-dom";

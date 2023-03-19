@@ -4,8 +4,10 @@ import "./ErrorPage.scss";
 export const ErrorPage = () => {
   const error: any = useRouteError();
   return (
-    <div className="Error">
-      <div className="Error__container container">error {error?.message}</div>
-    </div>
+    <main className="main">
+      <div className="Error">
+        <div className="Error__container container">Error {error?.message}</div>
+      </div>
+    </main>
   );
 };

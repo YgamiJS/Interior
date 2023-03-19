@@ -1,4 +1,4 @@
-import React, { Dispatch } from "react";
+import { Dispatch } from "react";
 import styles from "./Modal.module.scss";
 import { SetStateAction } from "react";
 
