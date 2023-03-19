@@ -1,9 +1,0 @@
-
-.main
-разбить страницы по компонентам as #231838!
-
-img
-adaptive
-desing
-backend 
-code as Rys
