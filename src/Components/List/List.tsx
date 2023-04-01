@@ -1,9 +1,11 @@
 interface IProps<T> {
   items: T[];
-  [x: string]: any;
+  className?: string;
   renderList: (element: T) => React.ReactNode;
 }
 
 export function List<T>(props: IProps<T>) {
-  return <div {...props}>{props.items.map(props.renderList)}</div>;
+  return (
+    <div className={props.className}>{props.items.map(props.renderList)}</div>
+  );
 }

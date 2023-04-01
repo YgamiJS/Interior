@@ -20,29 +20,29 @@ export const Header = () => {
         <nav className={styles.dekstop__navbar}>
           <ul>
             <li>
-              <Link to="/">Home</Link>
+              <Link to="/Interior/">Home</Link>
             </li>
             <li>
-              <Link to="/Shop">Shop</Link>
+              <Link to="/Interior/Shop">Shop</Link>
             </li>
             <li>
-              <Link to="/AboutUs">About Us</Link>
+              <Link to="/Interior/AboutUs">About Us</Link>
             </li>
             <li>
-              <Link to="/Contact">Contact</Link>
+              <Link to="/Interior/Contact">Contact</Link>
             </li>
             {!auth.isAuth && (
               <>
                 <li>
-                  <Link to="/login">Login</Link>
+                  <Link to="/Interior/login">Login</Link>
                 </li>
                 <li>
-                  <Link to="/singin">Sing In</Link>
+                  <Link to="/Interior/singin">Sing In</Link>
                 </li>
               </>
             )}
             <li>
-              <Link to="/basket">
+              <Link to="/Interior/basket">
                 <img src={favoritePhoto} alt="" />
               </Link>
             </li>
@@ -62,29 +62,29 @@ export const Header = () => {
           </button>
           <ul className={clsx(visiblity ? styles.visiblity : styles.hidden)}>
             <li>
-              <Link to="/">Home</Link>
+              <Link to="/Interior/">Home</Link>
             </li>
             <li>
-              <Link to="/Shop">Shop</Link>
+              <Link to="/Interior/Shop">Shop</Link>
             </li>
             <li>
-              <Link to="/AboutUs">About Us</Link>
+              <Link to="/Interior/AboutUs">About Us</Link>
             </li>
             <li>
-              <Link to="/Contact">Contact</Link>
+              <Link to="/Interior/Contact">Contact</Link>
             </li>
             {!auth.isAuth && (
               <>
                 <li>
-                  <Link to="/login">Login</Link>
+                  <Link to="/Interior/login">Login</Link>
                 </li>
                 <li>
-                  <Link to="/singin">Sing In</Link>
+                  <Link to="/Interior/singin">Sing In</Link>
                 </li>
               </>
             )}
             <li>
-              <Link to="/basket">
+              <Link to="/Interior/basket">
                 <img src={favoritePhoto} alt="" />
               </Link>
             </li>

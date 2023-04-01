@@ -8,7 +8,7 @@ export const Home = () => {
   const products = useAppSelector((state) => state.products.merchandises);
 
   return (
-    <main className="main">
+    <>
       <div className="Interior">
         <div className="Interior__container container">
           <div className="Interior__text">
@@ -113,6 +113,6 @@ export const Home = () => {
           </div>
         </div>
       </div>
-    </main>
+    </>
   );
 };

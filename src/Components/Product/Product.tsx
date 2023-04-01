@@ -62,7 +62,7 @@ export const Product = () => {
                 Buy
               </button>
             ) : (
-              <Link className={styles.info__button} to="/Basket/">
+              <Link className={styles.info__button} to="/Interior/Basket/">
                 Go to the Basket
               </Link>
             )}

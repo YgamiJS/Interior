@@ -10,34 +10,34 @@ import { SingIn } from "@/Pages/Auth/SingIn/SingIn";
 
 export const publicRoutes: IRoute[] = [
   {
-    path: "/",
+    path: "/Interior/",
     element: <Home />,
   },
   {
-    path: "/login",
+    path: "/Interior/login",
     element: <Login />,
   },
   {
-    path: "/singin",
+    path: "/Interior/singin",
     element: <SingIn />,
   },
 ];
 
 export const privateRoutes: IRoute[] = [
   {
-    path: "/shop",
+    path: "/Interior/shop",
     element: <Shop />,
   },
   {
-    path: "/shop/:id",
+    path: "/Interior/shop/:id",
     element: <ProductPage />,
   },
   {
-    path: "/basket/",
+    path: "/Interior/basket/",
     element: <Basket />,
   },
   {
-    path: "*",
+    path: "/Interior/*",
     element: <ErrorPage />,
   },
 ];

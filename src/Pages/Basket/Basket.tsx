@@ -64,28 +64,26 @@ export const Basket = () => {
   }
 
   return (
-    <main className="main">
-      <div className="Basket">
-        <div className="Basket__container container">
-          {(favoriteProducts.length || boughtProducts.length) > 0 ? (
-            <>
-              {favoriteProducts.length > 0 && (
-                <>
-                  <FavoriteProductsList favoriteProducts={favoriteProducts} />
-                  <BasketForm totalPrice={totalPrice} onSubmit={onSubmit} />
-                </>
-              )}
-              {boughtProducts.length && (
-                <BoughtProductsList boughtProducts={boughtProducts} />
-              )}
-            </>
-          ) : (
-            <div className="empty">
-              <h1 className="meduim-text">No products yet</h1>
-            </div>
-          )}
-        </div>
+    <div className="Basket">
+      <div className="Basket__container container">
+        {(favoriteProducts.length || boughtProducts.length) > 0 ? (
+          <>
+            {favoriteProducts.length > 0 && (
+              <>
+                <FavoriteProductsList favoriteProducts={favoriteProducts} />
+                <BasketForm totalPrice={totalPrice} onSubmit={onSubmit} />
+              </>
+            )}
+            {boughtProducts.length && (
+              <BoughtProductsList boughtProducts={boughtProducts} />
+            )}
+          </>
+        ) : (
+          <div className="empty">
+            <h1 className="meduim-text">No products yet</h1>
+          </div>
+        )}
       </div>
-    </main>
+    </div>
   );
 };

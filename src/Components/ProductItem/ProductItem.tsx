@@ -10,7 +10,11 @@ interface IProps {
 
 export const ProductItem = ({ product, ...props }: IProps) => {
   return (
-    <Link to={`/shop/${product.id}`} className={styles.productItem} {...props}>
+    <Link
+      to={`/Interior/shop/${product.id}`}
+      className={styles.productItem}
+      {...props}
+    >
       <img src={product.img} alt={product.title} />
       <p className={styles.title}>{product.title}</p>
       <Rating initialValue={product.rating} size={24} />

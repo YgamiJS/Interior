@@ -44,6 +44,7 @@ export const Control = ({ text, ...props }: IProps) => {
         <Modal visible={visible} setIsVisible={setIsVisible}>
           {correspondproducts.length > 0 ? (
             <List
+              className={styles.list}
               items={correspondproducts}
               renderList={(product) => <ProductItem product={product} />}
             />
