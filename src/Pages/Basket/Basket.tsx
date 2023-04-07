@@ -51,7 +51,7 @@ export const Basket = () => {
       );
       dispath(clearFavorite());
     } else {
-      navigate("/login");
+      navigate("/Interior/login");
     }
   };
 
