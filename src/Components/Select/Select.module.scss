@@ -1,0 +1,12 @@
+@import "@/assets/css/varibles.scss";
+
+.select {
+  background-color: $white;
+  display: flex;
+  margin: 0 auto;
+  padding: 15px;
+  border-radius: 50px;
+  appearance: none;
+  cursor: pointer;
+  border: 1px solid $grey;
+}

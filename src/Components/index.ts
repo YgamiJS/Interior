@@ -9,3 +9,4 @@ export { BoughtProductsList } from "./BoughtProductsList/BoughtProductsList";
 export { Product } from "./Product/Product";
 export { LoginForm } from "./LoginForm/LoginForm";
 export { FormSingIn } from "./FormSingIn/FormSingIn";
+export { Select } from "./Select/Select";

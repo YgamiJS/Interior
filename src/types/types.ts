@@ -45,6 +45,11 @@ export type Input = {
   input: string;
 };
 
+export interface IOption {
+  value: keyof Pick<IProduct, "title" | "description" | "price">;
+  name: string;
+}
+
 export interface IServise {
   limit: number;
   page: number;

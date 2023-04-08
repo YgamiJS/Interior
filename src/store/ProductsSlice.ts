@@ -4,7 +4,7 @@ import {
   createAsyncThunk,
   createSlice,
 } from "@reduxjs/toolkit";
-import { IProduct, IServise } from "@/types/types";
+import { IOption, IProduct, IServise } from "@/types/types";
 import Servise from "@/services/Servise";
 import { data } from "./products";
 
@@ -36,7 +36,17 @@ const initialState: IState = {
 export const productSlices = createSlice({
   name: "products",
   initialState,
-  reducers: {},
+  reducers: {
+    sortProducts(state, action: PayloadAction<IOption["value"]>) {
+      state.merchandises.sort((a, b) =>
+        typeof b === "string"
+          ? (a[action.payload] as string).localeCompare(
+              b[action.payload] as string
+            )
+          : String(a[action.payload]).localeCompare(String(b[action.payload]))
+      );
+    },
+  },
   extraReducers: (builder) => {
     builder.addCase(fetchProducts.pending, (state, action) => {
       state.status = "pending";
@@ -57,4 +67,5 @@ export const productSlices = createSlice({
   },
 });
 
+export const { sortProducts } = productSlices.actions;
 export default productSlices.reducer;
