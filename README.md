@@ -6,6 +6,7 @@
 
 - React
 - Redux
+- Jest
 - TS
 - SASS
 
