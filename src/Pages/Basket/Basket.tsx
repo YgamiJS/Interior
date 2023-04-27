@@ -74,7 +74,7 @@ export const Basket = () => {
                 <BasketForm totalPrice={totalPrice} onSubmit={onSubmit} />
               </>
             )}
-            {boughtProducts.length && (
+            {boughtProducts.length > 0 && (
               <BoughtProductsList boughtProducts={boughtProducts} />
             )}
           </>

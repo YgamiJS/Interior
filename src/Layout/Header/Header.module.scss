@@ -17,6 +17,24 @@
       }
     }
 
+    .basket {
+      position: relative;
+    }
+
+    .countFavoriteProducts {
+      background: $red;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: $white;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      position: absolute;
+      top: 0;
+      left: 100%;
+    }
+
     .mobile__navbar {
       display: none;
       .button {

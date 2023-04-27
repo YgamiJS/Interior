@@ -5,6 +5,9 @@
   flex-direction: column;
   gap: 20px;
   width: 300px;
+  @media (max-width: 767px) {
+    width: 100%;
+  }
   input {
     -moz-appearance: textfield;
     &::-webkit-outer-spin-button,

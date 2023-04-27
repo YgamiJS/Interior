@@ -5,8 +5,12 @@ import { Link } from "react-router-dom";
 import clsx from "clsx";
 import styles from "./Header.module.scss";
 import { useAuth } from "@/hooks/useAuth";
+import { useAppSelector } from "@/hooks/useRedux";
 
 export const Header = () => {
+  const favoriteProducts = useAppSelector(
+    (state) => state.favoritesProducts.merchandises
+  );
   const auth = useAuth();
   const [visiblity, setIsVisiblity] = useState<boolean>(false);
 
@@ -41,10 +45,15 @@ export const Header = () => {
                 </li>
               </>
             )}
-            <li>
+            <li className={styles.basket}>
               <Link to="/Interior/basket">
                 <img src={favoritePhoto} alt="" />
               </Link>
+              {favoriteProducts.length > 0 && (
+                <div className={styles.countFavoriteProducts}>
+                  {favoriteProducts.length}
+                </div>
+              )}
             </li>
           </ul>
         </nav>
@@ -83,10 +92,15 @@ export const Header = () => {
                 </li>
               </>
             )}
-            <li>
+            <li className={styles.basket}>
               <Link to="/Interior/basket">
                 <img src={favoritePhoto} alt="" />
               </Link>
+              {favoriteProducts.length > 0 && (
+                <div className={styles.countFavoriteProducts}>
+                  {favoriteProducts.length}
+                </div>
+              )}
             </li>
           </ul>
         </nav>

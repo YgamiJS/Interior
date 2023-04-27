@@ -21,7 +21,7 @@ export const Slider = ({ products }: IProps) => {
       spaceBetween={20}
       breakpoints={{
         310: {
-          slidesPerView: 1,
+          slidesPerView: 3,
         },
         640: {
           slidesPerView: 2,
