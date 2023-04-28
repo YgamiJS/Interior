@@ -15,13 +15,15 @@ interface IProps {
 export const Slider = ({ products }: IProps) => {
   return (
     <Swiper
-      className="container"
+      className={
+        !matchMedia("(max-width: 475px)") ? "container" : "mobile__container"
+      }
       modules={[Navigation, Autoplay]}
       slidesPerView={3}
       spaceBetween={20}
       breakpoints={{
         310: {
-          slidesPerView: 3,
+          slidesPerView: 1,
         },
         640: {
           slidesPerView: 2,

@@ -52,6 +52,13 @@ body {
   padding: 0 15px;
 }
 
+.mobile__container {
+  // for slider
+  margin: 0 auto;
+  max-width: 100vw;
+  padding: 0 15px;
+}
+
 .main {
   margin-top: 60px;
   flex: 1 0 100%;
