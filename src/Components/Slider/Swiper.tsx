@@ -16,7 +16,9 @@ export const Slider = ({ products }: IProps) => {
   return (
     <Swiper
       className={
-        !matchMedia("(max-width: 475px)") ? "container" : "mobile__container"
+        matchMedia("(max-width: 475px)").matches
+          ? "mobile__container"
+          : "container"
       }
       modules={[Navigation, Autoplay]}
       slidesPerView={3}

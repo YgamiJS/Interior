@@ -1,12 +1,34 @@
-import React from "react";
 import { IRoute } from "@/types/types";
-import { Home } from "@/Pages/Home/Home";
-import { Shop } from "@/Pages/Shop/Shop";
-import { ProductPage } from "@/Pages/ProductPage/ProductPage";
-import { Basket } from "@/Pages/Basket/Basket";
-import { ErrorPage } from "@/Pages/Error/ErrorPage";
-import { Login } from "@/Pages/Auth/Login/Login";
-import { SingIn } from "@/Pages/Auth/SingIn/SingIn";
+import { lazy } from "react";
+const Home = lazy(() =>
+  import("@/Pages/Home/Home").then((module) => ({ default: module.Home }))
+);
+const Shop = lazy(() =>
+  import("@/Pages/Shop/Shop").then((module) => ({ default: module.Shop }))
+);
+const ProductPage = lazy(() =>
+  import("@/Pages/ProductPage/ProductPage").then((module) => ({
+    default: module.ProductPage,
+  }))
+);
+const Basket = lazy(() =>
+  import("@/Pages/Basket/Basket").then((module) => ({ default: module.Basket }))
+);
+const ErrorPage = lazy(() =>
+  import("@/Pages/Error/ErrorPage").then((module) => ({
+    default: module.ErrorPage,
+  }))
+);
+const Login = lazy(() =>
+  import("@/Pages/Auth/Login/Login").then((module) => ({
+    default: module.Login,
+  }))
+);
+const SingIn = lazy(() =>
+  import("@/Pages/Auth/SingIn/SingIn").then((module) => ({
+    default: module.SingIn,
+  }))
+);
 
 export const publicRoutes: IRoute[] = [
   {

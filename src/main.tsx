@@ -7,13 +7,14 @@ import { PersistGate } from "redux-persist/integration/react";
 import store, { persistor } from "./store/store";
 import "@/services/firebase";
 import "@/assets/css/App.scss";
+import { Loading } from "./Components";
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>
-    <Suspense fallback={<h1>loading</h1>}>
+    <Suspense fallback={<Loading />}>
       <BrowserRouter>
         <Provider store={store}>
-          <PersistGate loading={<h1>loading</h1>} persistor={persistor}>
+          <PersistGate loading={<Loading />} persistor={persistor}>
             <App />
           </PersistGate>
         </Provider>

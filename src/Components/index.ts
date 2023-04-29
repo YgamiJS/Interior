@@ -10,3 +10,5 @@ export { Product } from "./Product/Product";
 export { LoginForm } from "./LoginForm/LoginForm";
 export { FormSingIn } from "./FormSingIn/FormSingIn";
 export { Select } from "./Select/Select";
+export { Loading } from "./Loading/Loading";
+export { NetWork } from "./NetWork/NetWork";

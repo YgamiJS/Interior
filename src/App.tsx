@@ -1,8 +1,10 @@
-import { FC } from "react";
+import { NetWork } from "./Components";
 import { RouterApp } from "./Router/RouterApp";
+import { useNetwork } from "./hooks/useNetwork";
 
 const App = () => {
-  return <RouterApp data-testid="app" />;
+  const isOnline = useNetwork();
+  return isOnline ? <RouterApp data-testid="app" /> : <NetWork />;
 };
 
 export default App;
