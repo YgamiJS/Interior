@@ -3,7 +3,7 @@ import { uuid } from "@/utils/utils";
 
 export const data: IProduct[] = [
   {
-    id: uuid(),
+    id: "0",
     title: "  Kitchen chair",
     description:
       " Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia excepturi pariatur at provident vitae deleniti maxime exercitationem magnam delectus perspiciatis. Quas tempora optio veniam omnis temporibus ipsam ipsum sint eaque.",
@@ -18,7 +18,7 @@ export const data: IProduct[] = [
     ],
   },
   {
-    id: uuid(),
+    id: "1",
     title: "Coral vase",
     description:
       " Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia excepturi pariatur at provident vitae deleniti maxime exercitationem magnam delectus perspiciatis. Quas tempora optio veniam omnis temporibus ipsam ipsum sint eaque.",
@@ -34,7 +34,7 @@ export const data: IProduct[] = [
     ],
   },
   {
-    id: uuid(),
+    id: "2",
     title: "Gray sofa",
     description:
       " Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia excepturi pariatur at provident vitae deleniti maxime exercitationem magnam delectus perspiciatis. Quas tempora optio veniam omnis temporibus ipsam ipsum sint eaque.",
@@ -51,7 +51,7 @@ export const data: IProduct[] = [
     ],
   },
   {
-    id: uuid(),
+    id: "3",
     title: " Decorative bush",
     description:
       " Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia excepturi pariatur at provident vitae deleniti maxime exercitationem magnam delectus perspiciatis. Quas tempora optio veniam omnis temporibus ipsam ipsum sint eaque.",
@@ -68,7 +68,7 @@ export const data: IProduct[] = [
     ],
   },
   {
-    id: uuid(),
+    id: "4",
     title: " Living Room lamp",
     description:
       " Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia excepturi pariatur at provident vitae deleniti maxime exercitationem magnam delectus perspiciatis. Quas tempora optio veniam omnis temporibus ipsam ipsum sint eaque.",
@@ -84,7 +84,7 @@ export const data: IProduct[] = [
     ],
   },
   {
-    id: uuid(),
+    id: "5",
     title: " Blue chair",
     description:
       " Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia excepturi pariatur at provident vitae deleniti maxime exercitationem magnam delectus perspiciatis. Quas tempora optio veniam omnis temporibus ipsam ipsum sint eaque.",
@@ -102,7 +102,7 @@ export const data: IProduct[] = [
     ],
   },
   {
-    id: uuid(),
+    id: "6",
     title: "Pastel chair",
     description:
       " Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia excepturi pariatur at provident vitae deleniti maxime exercitationem magnam delectus perspiciatis. Quas tempora optio veniam omnis temporibus ipsam ipsum sint eaque.",
@@ -118,7 +118,7 @@ export const data: IProduct[] = [
     ],
   },
   {
-    id: uuid(),
+    id: "7",
     title: " Kitchen chair",
     description:
       " Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia excepturi pariatur at provident vitae deleniti maxime exercitationem magnam delectus perspiciatis. Quas tempora optio veniam omnis temporibus ipsam ipsum sint eaque.",
@@ -134,7 +134,7 @@ export const data: IProduct[] = [
     ],
   },
   {
-    id: uuid(),
+    id: "8",
     title: "Padded stool",
     description:
       " Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia excepturi pariatur at provident vitae deleniti maxime exercitationem magnam delectus perspiciatis. Quas tempora optio veniam omnis temporibus ipsam ipsum sint eaque.",
@@ -150,7 +150,7 @@ export const data: IProduct[] = [
     ],
   },
   {
-    id: uuid(),
+    id: "9",
     title: "  Designer chair",
     description:
       " Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia excepturi pariatur at provident vitae deleniti maxime exercitationem magnam delectus perspiciatis. Quas tempora optio veniam omnis temporibus ipsam ipsum sint eaque.",

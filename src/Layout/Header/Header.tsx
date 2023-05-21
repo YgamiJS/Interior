@@ -1,6 +1,5 @@
 import { useState } from "react";
 import favoritePhoto from "@/assets/images/shop.png";
-import line from "@/assets/images/2Vector-2.png";
 import { Link } from "react-router-dom";
 import clsx from "clsx";
 import styles from "./Header.module.scss";
@@ -58,16 +57,12 @@ export const Header = () => {
           </ul>
         </nav>
         <nav className={styles.mobile__navbar} onClick={toggleMenu}>
-          <button className={styles.button}>
-            <span>
-              <img src={line} />
-            </span>
-            <span>
-              <img src={line} />
-            </span>
-            <span>
-              <img src={line} />
-            </span>
+          <button
+            className={clsx(styles.button, visiblity && styles.button_active)}
+          >
+            <span className={styles.button__line}></span>
+            <span className={styles.button__line}></span>
+            <span className={styles.button__line}></span>
           </button>
           <ul className={clsx(visiblity ? styles.visiblity : styles.hidden)}>
             <li>

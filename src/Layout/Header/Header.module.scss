@@ -39,11 +39,42 @@
       display: none;
       .button {
         background: transparent;
+        position: relative;
         border: none;
         display: flex;
         flex-direction: column;
-        width: 50px;
+        justify-content: space-between;
+        justify-self: center;
+        align-items: center;
+        width: 35px;
+        height: 35px;
+        transition: all 300ms ease;
+
+        &__line {
+          background: $graphit;
+          width: 100%;
+          height: 4.5px;
+          border-radius: 8px;
+          transition: all 300ms ease;
+        }
+
+        &_active {
+          display: grid;
+          span {
+            position: absolute;
+            &:first-child {
+              transform: rotate(45deg);
+            }
+            &:nth-child(2) {
+              display: none;
+            }
+            &:last-child {
+              transform: rotate(-45deg);
+            }
+          }
+        }
       }
+
       ul {
         background: bisque;
         display: none;
